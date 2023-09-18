@@ -13,19 +13,22 @@ Using Into this Project
 4.java 17
 (i did not use any database)
 
-following technologies:
-- Spring Security for Authentication
-- JWT Token for Access Control
-- RestTemplate for making external API calls
-- 
-Running the Project
 To run this project, follow these steps:
+
 1. Clone the project to your local machine.
 2. Open it in your preferred Integrated Development Environment (IDE), such as
 IntelliJ IDEA or Spring Tool Suite (STS).
 3. Add the project as an existing Maven project in your IDE.
 4. The project should automatically download all required dependencies.
 5. Try to run the project.
+
+
+following technologies:
+
+- Spring Security for Authentication
+- JWT Token for Access Control
+- RestTemplate for making external API calls
+- 
 
 
 ## endpoint url
@@ -60,6 +63,7 @@ field-name-> languages,area,population
 sortOrder->asc,desc
 For ascending order, use "asc" for sortOrder.
 For descending order, use "desc" for sortOrder.
+
 Authorization: Choose "Bearer Token" and pass the token obtained during login.
 If the token is valid, it will return the result.
                       Or
