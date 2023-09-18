@@ -30,7 +30,7 @@ IntelliJ IDEA or Spring Tool Suite (STS).
 
 ## endpoint url
 1. Logging In (Getting JWT Token)
-- **Endpoint:** POST Request - `localhost:8081/api/credential/login`
+- **Endpoint:** POST Request - localhost:8081/api/credential/login
 - **Request Body:json
 {
 "username": "deepak123",
@@ -45,16 +45,17 @@ or
 It will return a JWT token.
 
 2. Get Country by country name
-Endpoint: GET Request -'localhost:8081/api/country/{name}'
-like:-'localhost:8081/api/country/eesti'
-{name}-pass country name
+Endpoint: GET Request -localhost:8081/api/country/{name}
+
+      like:-'localhost:8081/api/country/eesti'
+      {name}-pass country name
 Authorization: Choose "Bearer Token" and pass the token obtained during login.
 If the token is valid, it will return the result.
 
 4. Getting All Country Details by Filter and Pagination
-Endpoint: GET Request - localhost:8081/api/country/filter/{field-
-name}/{sortOrder}/{page}/{pageSize}
+Endpoint: GET Request - localhost:8081/api/country/filter/{field name}/{sortOrder}/{page}/{pageSize}
 like :- localhost:8081/api/country/filter/languages/asc/1/10
+
 field-name-> languages,area,population
 sortOrder->asc,desc
 For ascending order, use "asc" for sortOrder.
@@ -66,10 +67,10 @@ Alternatively, you can also use form-data in the request body with the
 following parameters:
 Endpoint: GET Request -> localhost:8081/api/country/filter
 pass into boyd form data ->
-sortBy: population
-sortOrder: asc or desc
-page: 1
-pageSize: 4
+                         sortBy: population
+                         sortOrder: asc or desc
+                         page: 1
+                         pageSize: 4
 
 6. Getting All Country Details
 Endpoint: GET Request - localhost:8081/api/country
